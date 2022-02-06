@@ -33,7 +33,7 @@ function MessageContainer (){
     }
 
     return (
-        <div className="w-2/5 h-5/6 rounded-lg relative flex flex-col border-2 border-slate-400 shadow-2xl bg-white">
+        <div className="w-5/6 mt-12 lg:mt-0 lg:w-2/5 md:w-1/2 h-5/6 rounded-lg relative flex flex-col border-2 border-slate-400 shadow-2xl bg-white">
             <div className="h-94 px-4 py-4 w-full flex flex-col space-y-2 overflow-y-auto">
                 <Messages messages={allMessages}/>
             </div>

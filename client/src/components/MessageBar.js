@@ -21,10 +21,10 @@ function MessageBar ( {socket, addMessage} ) {
     return (
         <div className="h-6s flex">
             <div className="relative w-full border-t-2 border-slate-300">
-                <input className="pl-4 pr-36 w-full h-full text-xl rounded-b-md outline-none" type={'text'} placeholder="Type here to send message..."  onChange={setMessage} value={currentUserMessage}/>
+                <input className="pl-2 lg:pl-4 pr-36 w-full h-full text-xs lg:text-lg rounded-b-md outline-none" type={'text'} placeholder="Type here to send message..."  onChange={setMessage} value={currentUserMessage}/>
                 <div className="absolute right-0 top-0 h-full">
-                    <button className="bg-green-400 px-6 py-2 h-full text-xl text-white" onClick={sendMessage}><i className="fas fa-share"></i></button>
-                    <button className="bg-blue-400 px-6 py-2  h-full text-xl rounded-br-md text-white"><i className="fas fa-microphone"></i></button>
+                    <button className="bg-green-400 px-6 py-2 h-full text-sm lg:text-lg text-white" onClick={sendMessage}><i className="fas fa-share"></i></button>
+                    <button className="bg-blue-400 px-6 py-2  h-full text-sm lg:text-lg rounded-br-md text-white"><i className="fas fa-microphone"></i></button>
                 </div>     
             </div>
            
